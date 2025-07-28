@@ -47,18 +47,25 @@
       </div>
     </div>
     <div class="navigation-search full-width-nav container">
-      <div id="head-search" class="search-container featured-search">
+      <div id="head-search" class="search-container featured-search" role="search">
         <div class="container">
-          <form id="Search" class="pos-rel" action="#">
-            <span class="sr-only" id="SearchInput">Custom Google Search</span>
-            <input type="search" name="q" aria-labelledby="SearchInput" placeholder="Search" class="search-textfield" />
-            <button type="submit" class="gsc-search-button">
+          <form id="Search" class="pos-rel" action="#" aria-label="Site Search">
+            <label for="searchInput" class="sr-only">Custom Google Search</label>
+            <input type="search" 
+                   id="searchInput" 
+                   name="q" 
+                   placeholder="Search" 
+                   class="search-textfield"
+                   aria-label="Search website content" />
+            <button type="submit" class="gsc-search-button" aria-label="Submit Search">
               <span class="ca-gov-icon-search" aria-hidden="true"></span>
               <span class="sr-only">Submit</span>
             </button>
             <div class="close-search-btn">
-              <button class="close-search gsc-clear-button border-0 bg-transparent pos-rel" type="reset">
-                <span class="sr-only">Close</span>
+              <button class="close-search gsc-clear-button border-0 bg-transparent pos-rel" 
+                      type="reset"
+                      aria-label="Clear search">
+                <span class="sr-only">Close Search</span>
               </button>
             </div>
           </form>
@@ -68,11 +75,11 @@
 
       <!-- Mega Menu -->
       <!-- Dropdown Navigation  -->
-      <nav id="navigation" class="main-navigation megadropdown auto-highlight">
+      <nav id="navigation" class="main-navigation megadropdown auto-highlight" aria-label="Main Navigation">
         <ul id="nav_list" class="top-level-nav">
-          <li class="nav-item" role="presentation">
-            <a class="first-level-link">Getting Started</a>
-            <div class="sub-nav">
+          <li class="nav-item">
+            <button class="first-level-link" aria-expanded="false" aria-controls="getting-started-menu">Getting Started</button>
+            <div id="getting-started-menu" class="sub-nav" aria-hidden="true">
               <div class="second-level-nav flex">
                 <a href="/getting-started.html" class="second-level-link">
                   <span class="ca-gov-icon-online-services font-size-40" aria-hidden="true"></span>
@@ -119,9 +126,9 @@
             </div>
           </li>
 
-          <li class="nav-item" role="presentation">
-            <a class="first-level-link">Visual Desing</a>
-            <div class="sub-nav">
+          <li class="nav-item">
+            <button class="first-level-link" aria-expanded="false" aria-controls="visual-design-menu">Visual Design</button>
+            <div id="visual-design-menu" class="sub-nav" aria-hidden="true">
               <div class="second-level-nav flex">
                 <a href="/visual-design/typography.html" class="second-level-link">
                   <img class="image-icon rounded-50x m-b-md" src="/images/type.png" alt="Typography Icon" />
@@ -138,9 +145,10 @@
               </div>
             </div>
           </li>
-          <li class="nav-item" role="presentation">
-            <a class="first-level-link">Components</a>
-            <div class="sub-nav">
+
+          <li class="nav-item">
+            <button class="first-level-link" aria-expanded="false" aria-controls="components-menu">Components</button>
+            <div id="components-menu" class="sub-nav" aria-hidden="true">
               <div class="second-level-nav flex">
                 <a href="/structure/site-navigation.html" class="second-level-link">
                   <img class="image-icon rounded-50x m-b-md" src="/images/sample/images/03.png" alt="Navigation Icon" />
@@ -168,9 +176,9 @@
             </div>
           </li>
 
-          <li class="nav-item" role="presentation">
-            <a class="first-level-link">Patterns</a>
-            <div class="sub-nav">
+          <li class="nav-item">
+            <button class="first-level-link" aria-expanded="false" aria-controls="patterns-menu">Patterns</button>
+            <div id="patterns-menu" class="sub-nav" aria-hidden="true">
               <div class="second-level-nav flex">
                 <a href="/" class="second-level-link">
                   <span class="ca-gov-icon-home" aria-hidden="true"></span>
@@ -191,9 +199,9 @@
             </div>
           </li>
 
-          <li class="nav-item" role="presentation">
-            <a class="first-level-link">About</a>
-            <div class="sub-nav">
+          <li class="nav-item">
+            <button class="first-level-link" aria-expanded="false" aria-controls="about-menu">About</button>
+            <div id="about-menu" class="sub-nav" aria-hidden="true">
               <div class="second-level-nav flex with-border">
                 <a href="/about.html" class="second-level-link">
                   <div class="media-left">
