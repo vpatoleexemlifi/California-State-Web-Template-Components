@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>California State Web Template Example</title>
+
+  <!-- State Template Core CSS -->
+  <link rel="stylesheet" href="../assets/dist/ca_state_template/css/cagov.core.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/dist/main.css" />
+</head>
+
+<body>
+  <header role="banner" id="header" class="global-header fixed">
+    <div id="skip-to-content">
+      <a href="#main-content">Skip to Main Content</a>
+    </div>
+
+    <!-- header branding with light gray background -->
+    <div class="section-default">
+      <div class="branding">
+        <div class="header-organization-banner">
+          <a href="index.html">
+            <div class="logo-assets">
+              <img src="../assets/images/Logo.svg" class="logo-img" alt="Logo" />
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- mobile navigation controls -->
+    <div class="mobile-controls">
+      <span class="mobile-control-group mobile-header-icons">
+        <!-- Add more mobile controls here. These will be on the right side of the mobile page header section -->
+      </span>
+      <div class="mobile-control-group main-nav-icons">
+        <button id="nav-icon3" type="button" class="mobile-control toggle-menu" aria-expanded="false"
+          aria-controls="navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Menu</span>
+        </button>
+      </div>
+    </div>
+    <div class="navigation-search full-width-nav container">
+      <div id="head-search" class="search-container featured-search">
+        <div class="container">
+          <form id="Search" class="pos-rel" action="#">
+            <span class="sr-only" id="SearchInput">Custom Google Search</span>
+            <input type="search" name="q" aria-labelledby="SearchInput" placeholder="Search" class="search-textfield" />
+            <button type="submit" class="gsc-search-button">
+              <span class="ca-gov-icon-search" aria-hidden="true"></span>
+              <span class="sr-only">Submit</span>
+            </button>
+            <div class="close-search-btn">
+              <button class="close-search gsc-clear-button border-0 bg-transparent pos-rel" type="reset">
+                <span class="sr-only">Close</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- navigation types -->
+
+      <!-- Mega Menu -->
+      <!-- Dropdown Navigation  -->
+      <nav id="navigation" class="main-navigation megadropdown auto-highlight">
+        <ul id="nav_list" class="top-level-nav">
+          <li class="nav-item" role="presentation">
+            <a class="first-level-link">Getting Started</a>
+            <div class="sub-nav">
+              <div class="second-level-nav flex">
+                <a href="/getting-started.html" class="second-level-link">
+                  <span class="ca-gov-icon-online-services font-size-40" aria-hidden="true"></span>
+                  <p class="h3 sub-nav-link">
+                    Getting Started
+                    <span class="sr-only">page</span>
+                  </p>
+                  <p class="link-description">
+                    How to apply California State Template css, js and ssi
+                  </p>
+                </a>
+                <a href="/updates.html" class="second-level-link">
+                  <span class="ca-gov-icon-file-check font-size-40" aria-hidden="true"></span>
+                  <p class="h3 sub-nav-link">Update</p>
+                  <p class="link-description">
+                    Update your State Template to most current version
+                  </p>
+                </a>
+                <a href="/cdn.html" class="second-level-link">
+                  <span class="ca-gov-icon-globe font-size-40" aria-hidden="true"></span>
+                  <p class="h3 sub-nav-link">CDN</p>
+                  <p class="link-description">
+                    Load your website faster by using State Template CDN
+                  </p>
+                </a>
+              </div>
+              <div class="second-level-nav flex with-border">
+                <a href="/structure.html" class="second-level-link">
+                  <span class="ca-gov-icon-flowchart" aria-hidden="true"></span>
+                  Structure
+                  <div class="link-description">
+                    Find out more about State Template structure
+                  </div>
+                </a>
+                <a href="https://github.com/Office-of-Digital-Innovation/California-State-Template-v5"
+                  class="second-level-link" target="_blank">
+                  <span class="ca-gov-icon-download-cloud" aria-hidden="true"></span>
+                  Download
+                  <div class="link-description">
+                    Download or clone State Template on GitHub
+                  </div>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <a class="first-level-link">Visual Desing</a>
+            <div class="sub-nav">
+              <div class="second-level-nav flex">
+                <a href="/visual-design/typography.html" class="second-level-link">
+                  <img class="image-icon rounded-50x m-b-md" src="/images/type.png" alt="Typography Icon" />
+                  <p class="h3 sub-nav-link">Typography</p>
+                </a>
+                <a href="/visual-design/color-schemes.html" class="second-level-link">
+                  <img class="image-icon rounded-50x m-b-md" src="/images/color.png" alt="Color Schemes Icon" />
+                  <p class="h3 sub-nav-link">Color Schemes</p>
+                </a>
+                <a href="/visual-design/icon-fonts.html" class="second-level-link">
+                  <img class="image-icon rounded-50x m-b-md" src="/images/icons.png" alt="Bear Icon" />
+                  <p class="h3 sub-nav-link">Icons</p>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="first-level-link">Components</a>
+            <div class="sub-nav">
+              <div class="second-level-nav flex">
+                <a href="/structure/site-navigation.html" class="second-level-link">
+                  <img class="image-icon rounded-50x m-b-md" src="/images/sample/images/03.png" alt="Navigation Icon" />
+                  <p class="h3 sub-nav-link">Navigation Samples</p>
+                  <p class="link-description">
+                    Main navigation types and variations examples
+                  </p>
+                </a>
+                <a href="/components.html" class="second-level-link">
+                  <img class="image-icon rounded-50x m-b-md" src="/images/sample/images/features-icon.png"
+                    alt="Components Icon" />
+                  <p class="h3 sub-nav-link">Components</p>
+                  <p class="link-description">
+                    Working web components examples with their documentation
+                  </p>
+                </a>
+                <a href="/css-shortcuts/shortcuts.html" class="second-level-link">
+                  <img class="image-icon rounded-50x m-b-md" src="/images/sample/images/css-icon.png" alt="CSS Icon" />
+                  <p class="h3 sub-nav-link">CSS Shortcuts</p>
+                  <p class="link-description">
+                    State Template's custom css classes shortcuts list
+                  </p>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <a class="first-level-link">Patterns</a>
+            <div class="sub-nav">
+              <div class="second-level-nav flex">
+                <a href="/" class="second-level-link">
+                  <span class="ca-gov-icon-home" aria-hidden="true"></span>
+                  <span class="h4">Homepage</span>
+                  <div class="link-description">Home page layout</div>
+                </a>
+                <a href="/structure/layout-page.html" class="second-level-link">
+                  <span class="ca-gov-icon-loud-grid" aria-hidden="true"></span>
+                  <span class="h4">Layouts</span>
+                  <div class="link-description">Page layouts options</div>
+                </a>
+                <a href="//serp.html?q=components" class="second-level-link" target="_blank">
+                  <span class="ca-gov-icon-searching" aria-hidden="true"></span>
+                  <span class="h4">Search Results</span>
+                  <div class="link-description">Search directory sample page</div>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <a class="first-level-link">About</a>
+            <div class="sub-nav">
+              <div class="second-level-nav flex with-border">
+                <a href="/about.html" class="second-level-link">
+                  <div class="media-left">
+                    <img class="media-object width-80 height-80" src="/images/sample/images/02.png" alt="About icon" />
+                  </div>
+                  <div class="media-body">
+                    <div class="title text-left">About State Template</div>
+                    <div class="teaser link-description text-left">
+                      California State Template overview
+                    </div>
+                  </div>
+                </a>
+                <a href="https://webstandards.ca.gov/" class="second-level-link" target="_blank">
+                  <div class="media-left">
+                    <img class="media-object width-80 height-80" src="/images/sample/images/01.png"
+                      alt="Web Standards icon" />
+                  </div>
+                  <div class="media-body">
+                    <div class="title text-left">Web Standards</div>
+                    <div class="teaser link-description text-left">
+                      Web Standards and Design System for California Government
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- end dropdown -->
+
+      <!-- end mega menu -->
+
+    </div>
+
+
+
+
+  </header>
+  <div id="main-content" class="main-content">
+    <main class="main-primary" id="main">
+
+
+      <!-- BEGIN SAMPLE CONTENT -->
+      <div class="header-primary-banner hidden-print">
+        <div class="container">
+          <div class="row my-4">
+            <div class="col-12 col-md-6 my-auto">
+              <h1 class="color-white font-weight-600">Hero Banner</h1>
+              <div class="color-white lead m-b-lg line-height-1-6em" style="max-width:22em;">
+                Use the latest version of the template to develop your websites and
+                applications
+              </div>
+              <div class="btn-row p-b">
+                <a href="../download-and-setup.html" class="btn btn-primary">Download and setup</a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 my-auto">
+              <img class="py-3" width="100%" src="https://template.webstandards.ca.gov/images/header-bear.svg" alt=""
+                style="aspect-ratio: 1146 / 827">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- END SAMPLE CONTENT -->
+
+      
+
+      <!-- Buttons -->
+      <div class="container py-5">
+        <h1 class="mt-lg-0">Buttons</h1>
+        <!-- BEGIN SAMPLE CONTENT -->
+        <div class="btn-row p-b">
+          <button class="btn btn-primary">Primary color</button>
+          <button class="btn btn-highlight">Highlight color</button>
+          <button class="btn btn-standout">Standout color</button>
+        </div>
+      </div>
+
+
+      <!-- Header Banner -->
+      <div class="header-primary-banner d-flex justify-content-center align-items-center"
+        style="background-image: url('https://template.webstandards.ca.gov/images/main-banner10.jpg');">
+        <div class="container p-y-lg">
+          <div class="row">
+            <div class="col-12 color-white py-5">
+              <h1 class="text-3rem m-t-0 overflow-visible">Title</h1>
+              <p class="text-1-5rem line-height-1-5em">
+                Highlight an action you want people to take or important information
+                on the homepage.
+              </p>
+              <div class="btn-row p-b">
+                <a href="javascript:;" class="btn btn-lg btn-highlight m-t">
+                  Short link
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Header Banner end -->
+
+      <!-- image and text -->
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-md-6 p-a-md order-2 order-md-1">
+            <h1 class="h2 m-t">Heading </h1>
+            <p>
+              Compelling sentence or two that ties the website to the department
+              missions or goals
+            </p>
+            <p>
+              Vestibulum laoreet faucibus ultrices, vestibulum condimentum lectus in
+              arcu.
+            </p>
+            <a href="javascript:;" class="btn btn-primary m-t-md m-b-lg">Button</a>
+          </div>
+          <div class="col-md-6 text-right order-1 order-md-2 d-flex justify-content-center">
+            <img src="../assets/images/placeholder-image.png" alt="Main banner" class="img-fluid">
+          </div>
+        </div>
+
+
+
+        <div class="row m-y-lg">
+          <div class="col-md-6 m-b-md">
+            <!-- Article -->
+            <article class="bg-gray-50 bg-gray-100-hover brd-solid-1 brd-gray-200 pos-rel rounded-4">
+              <div class="p-a">
+                <h3 class="h4 m-t-0 m-b-sm">
+                  <a class="u-link-v5 color-gray-dark color-primary-hover link-before no-underline" href="javascript:;">
+                    Marketing 1
+                  </a>
+                </h3>
+                <p>
+                  Use marketing spaces to promote items related to business goals.
+                  Limit to 2 or 3 and rotate as needed. This allows the homepage to
+                  remain simple and focused.
+                </p>
+              </div>
+            </article>
+            <!-- End Article -->
+          </div>
+
+          <div class="col-md-6 m-b-md">
+            <!-- Article -->
+            <article class="bg-gray-50 bg-gray-100-hover brd-solid-1 brd-gray-200 pos-rel rounded-4">
+              <div class="p-a">
+                <h3 class="h4 m-t-0 m-b-sm">
+                  <a class="u-link-v5 color-gray-dark color-primary-hover link-before no-underline" href="javascript:;">
+                    Marketing 2
+                  </a>
+                </h3>
+                <p>
+                  Enter a concise description for this topic. You could include
+                  imagery with the marketing cards to make it more visually appealing.
+                </p>
+              </div>
+            </article>
+            <!-- End Article -->
+          </div>
+        </div>
+
+      </div>
+      <!-- image and text end -->
+
+      <!-- Simple card -->
+      <div class="container p-a-md">
+        <div class="row">
+          <div class="col-md-6 m-b-md">
+            <div class="card pos-rel">
+              <img class="card-img" src="../assets/images/placeholder-image.png" alt="Card image size">
+              <div class="card-body">
+                <h3 class="card-title">
+                  <a href="javascript:;" class="link-before">
+                    Give your card a short title
+                  </a>
+                </h3>
+                <p>
+                  Use this space to briefly tell your reader what they will find at the
+                  card's destination
+                </p>
+              </div>
+            </div>
+
+            <!-- End Article -->
+          </div>
+
+          <div class="col-md-6 m-b-md">
+            <!-- Article -->
+            <div class="card pos-rel">
+              <img class="card-img" src="../assets/images/placeholder-image.png" alt="Card image size">
+              <div class="card-body">
+                <h3 class="card-title">
+                  <a href="javascript:;" class="link-before">
+                    Give your card a short title
+                  </a>
+                </h3>
+                <p>
+                  Use this space to briefly tell your reader what they will find at the
+                  card's destination
+                </p>
+              </div>
+            </div>
+
+            <!-- End Article -->
+          </div>
+        </div>
+
+      </div>
+      <!-- Simple card end -->
+
+      <!-- Accordion -->
+      <div class="container mb-5">
+        <h1 class="mt-lg-0">Accordion</h1>
+        <!-- BEGIN SAMPLE CONTENT -->
+        <cagov-accordion>
+          <details>
+            <summary>Add a short, descriptive heading for your topic</summary>
+            <div class="accordion-body">
+              <p>
+                Once open, the content within the accordion should describe the topic in
+                more detail. It should not repeat the heading.
+              </p>
+              <p>
+                This part of the accordion is a great place to link to other resources.
+                Remember, important information and calls to action should live outside
+                of the accordion.
+              </p>
+            </div>
+          </details>
+        </cagov-accordion>
+        <cagov-accordion>
+          <details>
+            <summary>
+              If your heading must be longer, the accordion will wrap to multiple lines
+              within the container like this
+            </summary>
+            <div class="accordion-body">
+              <p>
+                Once open, the content within the accordion should describe the topic in
+                more detail. It should not repeat the heading.
+              </p>
+              <p>
+                This part of the accordion is a great place to link to other resources.
+                Remember, important information and calls to action should live outside
+                of the accordion.
+              </p>
+            </div>
+          </details>
+        </cagov-accordion>
+        <cagov-accordion>
+          <details>
+            <summary>This heading tells users what's inside the accordion</summary>
+            <div class="accordion-body">
+              <p>
+                Once open, the content within the accordion should describe the topic in
+                more detail. It should not repeat the heading.
+              </p>
+              <p>
+                This part of the accordion is a great place to link to other resources.
+                Remember, important information and calls to action should live outside
+                of the accordion.
+              </p>
+            </div>
+          </details>
+        </cagov-accordion>
+
+        <!-- END SAMPLE CONTENT -->
+      </div>
+      <!-- Accordion end -->
+
+      <!-- Table -->
+      <div class="container p-t-md mb-5">
+        <main class="main-primary" id="main">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="mt-lg-0">Table</h1>
+              <!-- BEGIN SAMPLE CONTENT -->
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Username</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Alpha</td>
+                    <td>One</td>
+                    <td>@alphaone</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Beta</td>
+                    <td>Two</td>
+                    <td>@betatwo</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Charlie</td>
+                    <td>Three</td>
+                    <td>@charliethree</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!-- END SAMPLE CONTENT -->
+            </div>
+          </div>
+        </main>
+      </div>
+      <!-- Table end -->
+
+      <!-- Tabs -->
+      <div class="container mb-5">
+        <h1 class="mt-lg-0">Tabs</h1>
+        <!-- BEGIN SAMPLE CONTENT -->
+        <div class="tabs">
+          <ul role="tablist">
+            <li role="presentation">
+              <a href="#section1" role="tab" aria-selected="true">Tab 1 example</a>
+            </li>
+            <li role="presentation">
+              <a href="#section2" role="tab" tabindex="-1">Tab 2 example</a>
+            </li>
+          </ul>
+          <section id="section1" role="tabpanel" tabindex="-1" aria-label="Tab 1 example">
+            <h3 class="m-t-0">Heading example</h3>
+            <p>Use tabs sparingly. When using tabs, don't use too many.</p>
+          </section>
+          <section id="section2" role="tabpanel" tabindex="-1" aria-label="Tab 2 example" hidden="">
+            <h3 class="m-t-0">Tab 2 heading</h3>
+            <p>This is tab 2 body text.</p>
+          </section>
+        </div>
+        <!-- Tabs end -->
+      </div>
+
+      <!-- Pagination -->
+      <div class="container mb-5">
+        <h1 class="mt-lg-0">Pagination</h1>
+        <!-- BEGIN SAMPLE CONTENT -->
+        <cagov-pagination data-current-page="5" data-total-pages="99"></cagov-pagination>
+
+        <!-- END SAMPLE CONTENT -->
+      </div>
+
+      <!-- Blockquote -->
+      <div class="container mb-5">
+        <h1 class="mt-lg-0">Blockquote</h1>
+        <!-- BEGIN SAMPLE CONTENT -->
+        <blockquote>
+          <p>
+            Good quotes help to tell a story and enhance the credibility of a press
+            release, news story, or speech. Words that are crafted well can leave a
+            lasting impact on the world.
+          </p>
+          <footer>Holly Zuluaga</footer>
+        </blockquote>
+      </div>
+      <!-- Blockquote end -->
+
+      <!-- Blockquote With Image -->
+      <div class="container mb-5">
+
+
+        <h1 class="mt-lg-0">Blockquote With Image</h1>
+        <!-- BEGIN SAMPLE CONTENT -->
+        <div class="row">
+          <div class="col-md-4 text-right p-r-md p-t-sm">
+            <img src="https://template.webstandards.ca.gov/images/blockquote-with-image.jpg"
+              class="img-fluid img-circle height-150" alt="Person's face">
+          </div>
+          <div class="col-md-8">
+            <blockquote>
+              <p>
+                You can pair a block quote with the image of related content or the
+                author of the quote.
+              </p>
+              <footer>Author</footer>
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- END SAMPLE CONTENT -->
+      </div>
+      <!-- Blockquote With Image end -->
+
+
+      <!-- Header Primary Banner -->
+
+
+
+
+
+    </main>
+  </div><!-- Global Footer -->
+
+  <!-- Global Footer -->
+  <footer id="footer" class="global-footer">
+
+    <div class="container">
+      <div class="d-flex">
+        <a href="#" class="cagov-logo">
+          <span class="sr-only">CA.gov</span>
+          <img src="../assets/images/Logo.svg" alt="Logo" />
+        </a>
+        <ul class="footer-links">
+          <li>
+            <a href="#">Conditions of use</a>
+          </li>
+          <li>
+            <a href="#">Privacy policy</a>
+          </li>
+          <li>
+            <a href="#l">
+              Website accessibility certification
+            </a>
+          </li>
+          <li>
+            <a href="#">Sitemap</a>
+          </li>
+        </ul>
+        <ul class="socialsharer-container">
+          <li>
+            <a href="https://github.com/Office-of-Digital-Services/California-State-Web-Template-HTML">
+              <span class="ca-gov-icon-github" aria-hidden="true"></span>
+              <span class="sr-only">GitHub</span>
+            </a>
+            <a href="https://github.com/Office-of-Digital-Services/California-State-Web-Template-HTML">
+              <span class="ca-gov-icon-facebook" aria-hidden="true"></span>
+              <span class="sr-only">Facebook</span>
+            </a>
+            <a href="https://github.com/Office-of-Digital-Services/California-State-Web-Template-HTML">
+              <span class="ca-gov-icon-instagram" aria-hidden="true"></span>
+              <span class="sr-only">Iinstagram</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Copyright Statement -->
+    <div class="copyright">
+      <div class="container text-left bis_skin_checked=" 1">
+        ©
+        <span id="thisyear">
+          <script>
+            document.getElementById('thisyear').appendChild(document.createTextNode(new Date().getFullYear()))
+          </script>2025
+          2025
+        </span>
+        State Name
+      </div>
+    </div>
+    <button class="return-top">
+      <span class="sr-only">Back to top</span>
+    </button>
+  </footer>
+  <!-- Extra Decorative Content -->
+  <div class="decoration-last">&nbsp;</div>
+
+  <!-- State Template Core JS -->
+  <script src="../assets/dist/main.js" type="module"></script>
+  <script src="../assets/dist/ca_state_template/js/cagov.core.min.js" type="module"></script>
+</body>
+
+</html>

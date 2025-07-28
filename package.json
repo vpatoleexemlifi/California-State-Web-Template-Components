@@ -1,0 +1,18 @@
+{
+  "devDependencies": {
+    "sass": "^1.89.2",
+    "vite": "^7.0.6",
+    "vite-plugin-sass": "^0.1.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "vite:build": "vite build",
+    "preview": "vite preview",
+    "sass:watch": "sass --watch --style=compressed --load-path=node_modules src/assets/scss/styles.scss src/assets/dist/main.css",
+    "build:js": "vite build --config vite.config.mjs --mode production",
+    "build:all": "sass --style=compressed --load-path=node_modules src/assets/scss/styles.scss src/assets/dist/main.css && vite build --config vite.config.mjs --mode production"
+  },
+  "dependencies": {
+    "@cagovweb/state-template": "^6.5.1"
+  }
+}
